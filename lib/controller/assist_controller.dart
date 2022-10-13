@@ -7,7 +7,6 @@ class AssistController extends GetxController with StateMixin<List<Assist>> {
   @override
   void onInit() {
     super.onInit();
-    change([], status: RxStatus.empty());
     _service = Get.find<AssistService>();
   }
 
